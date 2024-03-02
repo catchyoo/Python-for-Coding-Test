@@ -28,7 +28,7 @@
 1) 최적 부분 구조 : 큰 문제를 작은 문제로 나눈 후 작은 문제의 답을 모아서 큰 문제 해결
 2) 중복되는 부분 문제 : 동일한 작은 문제를 반복적으로 해결
   
-## 문법 정리
+## 문법 정리(라이브러리)
 1) import sys => input = sys.stdin.readline => 입력 받을 때, 필수
 2) from collections import deque => bfs 구현 시 사용
 3) from itertools import combinations => 조합 구현 시 사용
