@@ -69,5 +69,5 @@
       - arr[::-3] = [8,5,2]
 11) s = sys.stdin.readline().split() 로 입력 받을 때,
     split() 사용하였어도, 문자열 s가 하나만 받을 수 있다. 
-    ex) s = push_front 2 라고 했을 때, s[0], s[1]로 사용 가능
+    ex) s = push_front  2 라고 했을 때, s[0], s[1]로 사용 가능.
         s = empty 라고 했을 때, s[0]로 사용 가능 
