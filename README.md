@@ -34,3 +34,36 @@
 3) from itertools import combinations => 조합 구현 시 사용
 4) sys.setrecursionlimit(100000) => dfs 구현 시 사용
 5) dict = {} & new_dict = sorted(dict.items(), key = lambda x = (-x[0], len(x[1]))) : 관련 문제 = 20920,7785
+6) 배열에서의 원소 삽입 : ex) arr = [1,2,3]
+   - arr.append(4) : 배열의 끝에 값 추가 => arr = [1,2,3,4]
+   - arr.insert(1,4) : 1번 index에 4 추가 => arr = [1,4,2,3]
+   - arr + arr2(=[5,6]) : 배열 끝에 값 추가 => arr = [1,2,3,4,5,6]
+   - arr.extend(arr2) : 배열 끝에 배열 추가 => arr = [1,2,3,4,5,6]
+7) 배열에서의 원소 삭제 : ex) arr = [1,2,3,4,5,6,7]
+   - del arr[1] : 배열의 1번 index 값 삭제 => arr = [1,3,4,5,6,7]
+   - arr.remove(3) : 배열에서 원하는 값 삭제 => arr = [1,2,4,5,6,7]  *remove(x)는 리스트의 첫 번쨰로 나오는 x를 삭제. 즉, 동일한 x 여러 개 일 경우, 가장 첫 번째 x 값만 삭제
+   - arr.pop() or arr.pop(2) : 배열에서 원하는 index 값 리턴 후 삭제(괄호 안에 아무것도 없을 시 마지막 원소 리턴) => arr[1,2,3,4,5,6] or arr[1,2,4,5,6]
+8) 배열에서의 주요 문법 : ex) arr = [1,3,5,7,9] 
+   - reverse() : 배열을 역순으로 뒤집는 연산 => arr.reverse() = [9,7,5,3,1]
+   - index(x) : 배열에 x 값 존재 시, x의 위치 리턴 => arr.index(5) = 2
+   - count(x) : 배열 안에 x 라는 원소 몇 개 있는 지 리턴 => arr.count(3) = 1
+9) from collections import Counter : 여러 형태의 데이터를 인자로 받는 경우, 중복된 데이터가 저장된 배열을 인자로 넘기면 원소가 몇 번씩 나오는지 저장된 객체 얻을 수 있음
+    - ex) Counter(['red', 'blue', 'red', 'green', 'blue', 'blue']) => Counter({'blue': 3, 'red': 2, 'green': 1})
+    - Counter("hello world") => Counter({'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
+10) 배열의 슬라이싱 사용하기 => ex) arr = [1,2,3,4,5,6,7,8] / arr[start:stop:step]
+    1) start, stop 이용하기 :
+       - arr[2:6] = [3,4,5,6]
+    2) 음의 index 사용하기 :
+       - arr[:-2] = [1,2,3,4,5,6]
+       - arr[-4:] = [5,6,7,8]
+       - arr[-5:-2] = [4,5,6]
+    3) step 이용하기 :
+       - arr[::2] = [1,3,5,7]
+       - arr[::3] = [1,4,7]
+    4) start,stop,step 전부 사용하기 :
+       - arr[1::3] = [2,5,8]
+       - arr[2:6:2] = [3,5]
+    6) [::-1] 사용 : 
+      - arr[::-1] = [8,7,6,5,4,3,2,1]
+      - arr[::-2] = [8,6,4,2]
+      - arr[::-3] = [8,5,2]
