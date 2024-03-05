@@ -73,4 +73,6 @@
         s = empty 라고 했을 때, s[0]로 사용 가능
 12) BFS 는 항상 deque() 사용하여 while 문에서 처리할 것을 염두해두기!
 13) 이진탐색 : 정렬된 자료를 반씩 나누어 탐색하는 방법 => time complexity : O(MlogN). for 문 사용 시 : O(NM)
-  - left, right 사용! 관련 문제 : 1920
+  - left, right 사용! 관련 문제 : 1920, 10816
+14) dict = {} 사용 시, dict의 key 값에 따른 value 찾고 싶다면 => dict.get(key) 사용하는 것이 좋음
+    - dict[key] 사용 시, key 값이 없을 경우 keyError가 뜨지만, dict.get(key) 사용 시, 존재하지 않는 key에 대해 none을 리턴하기 때문에 에러 피할 수 있음.
