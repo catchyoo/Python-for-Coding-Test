@@ -80,3 +80,4 @@
 16) 1차원 리스트에서 min,max 찾는 법 : ex) arr = [] / min(arr) & max(arr)
 17) 1차원 리스트에서 min,max의 index 찾는 법 : ex) arr = [] / arr.index(min(arr)) & arr.index(max(arr))
 18) 1차원 리스트에서 min,max 빼내는 법 : ex) arr = [] / arr.pop(arr.index(min(arr))) & arr.pop(arr.index(max(arr)))
+19) 2차원 배열 안에 [[x,y]] 만 들어갈 필요 없음. [[x,y,z,w,,,]] 여러 개 들어 갈 수 있음을 명시. => ex) arr = list([] for _ in range(n+1)) & arr[x].append(y). y 안에 1,2,3...
