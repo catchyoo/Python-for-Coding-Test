@@ -77,3 +77,6 @@
 14) dict = {} 사용 시, dict의 key 값에 따른 value 찾고 싶다면 => dict.get(key) 사용하는 것이 좋음
     - dict[key] 사용 시, key 값이 없을 경우 keyError가 뜨지만, dict.get(key) 사용 시, 존재하지 않는 key에 대해 none을 리턴하기 때문에 에러 피할 수 있음.
 15) split()의 사용법 => 보통 split()을 사용할 때는, 띄어쓰기 기준으로 사용하기 위해서 input().split()을 사용하게 됨. 하지만 내가 원하는 기준에 맞추어 split() 하고 싶을 때는 괄호안에 기준에 해당하는 값을 넣어주면 됨. ex) split('-') : - 부호 기준으로 문자열 나누기. split('+') : + 부호 기준으로 문자열 나누기 등.
+16) 1차원 리스트에서 min,max 찾는 법 : ex) arr = [] / min(arr) & max(arr)
+17) 1차원 리스트에서 min,max의 index 찾는 법 : ex) arr = [] / arr.index(min(arr)) & arr.index(max(arr))
+18) 1차원 리스트에서 min,max 빼내는 법 : ex) arr = [] / arr.pop(arr.index(min(arr))) & arr.pop(arr.index(max(arr)))
