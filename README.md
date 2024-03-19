@@ -82,6 +82,7 @@
 18) 1차원 리스트에서 min,max 빼내는 법 : ex) arr = [] / arr.pop(arr.index(min(arr))) & arr.pop(arr.index(max(arr)))
 19) 2차원 배열 안에 [[x,y]] 만 들어갈 필요 없음. [[x,y,z,w,,,]] 여러 개 들어 갈 수 있음을 명시. => ex) arr = list([] for _ in range(n+1)) & arr[x].append(y). y 안에 1,2,3...
 20) dict를 sorted 하여 리스트로 만든 후, key & value 찾고 싶다면,,, 
-    => dict = {} / arr = sorted(dict.items(), key = lambda x : x[0]). => for i in range(len(arr)-1): key = arr[i][0] & value = arr[i][1]
+    => dict = {} / arr = sorted(dict.items(), key = lambda x : x[0]). => for i in range(len(arr)-1): **key = arr[i][0] & value = arr[i][1]**
 21) input() 함수 : 입력의 마지막에서 줄바꿈 문자를 자동으로 **제거**.
     sys.stdin.readline() 함수 : 줄바꿈 문자를 **포함한 채**로 입력된 문자열을 반환
+22) 정렬된 dict의 key & value 사용법 : 20)번 참고!!
