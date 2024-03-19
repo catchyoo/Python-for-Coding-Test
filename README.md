@@ -85,4 +85,4 @@
     => dict = {} / arr = sorted(dict.items(), key = lambda x : x[0]). => for i in range(len(arr)-1): **key = arr[i][0] & value = arr[i][1]**
 21) input() 함수 : 입력의 마지막에서 줄바꿈 문자를 자동으로 **제거**.
     sys.stdin.readline() 함수 : 줄바꿈 문자를 **포함한 채**로 입력된 문자열을 반환
-22) 정렬된 dict의 key & value 사용법 : 20)번 참고!!
+22) 정렬된 dict의 key & value 사용법 : 20)번 참고!! => 따라서, key 값끼리 비교 : arr[0][1] > arr[1][1] 처럼 사용,,,
