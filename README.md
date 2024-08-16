@@ -101,6 +101,8 @@
 - 항상 dict, deque 기본적으로 생각. index와 content 같이 사용할 수 있을까 / 몫과 나누기 사용
 - itertools의 함수 생각 => 사용 못할 경우도 대비하기
 - heapq 사용법
+- math : gcd & lcm = greatest common divisor & lowest common multiple
+- Ascii code : chr & ord = characters & order
   
 ## 프로그래머스 오답 정리
 ### LV1 : 약간 하드한 코딩. 손코딩 먼저 하고, 코드 짜기
