@@ -96,9 +96,9 @@
 26) 두 숫자의 최대공약수 구하는 함수 : from math import **gcd** => 두 수의 최소공배수 = 두 수의 곱 // 두 수의 최대공약수 ; a*b //gcd(a,b) ; gcd = greatest common divisor, lcm = lowest common multiple
 
 def generate_combinations(arr, r):
+
     result = []
     n = len(arr)
-    
     def backtrack(start, path):
         # r개의 요소가 선택되었으면 결과에 추가
         if len(path) == r:
@@ -116,10 +116,10 @@ def generate_combinations(arr, r):
     return result
 
 def generate_permutations(arr, r):
+
     result = []
     n = len(arr)
     used = [False] * n  # 요소가 사용되었는지를 체크하기 위한 배열
-    
     def backtrack(path):
         # r개의 요소가 선택되었으면 결과에 추가
         if len(path) == r:
