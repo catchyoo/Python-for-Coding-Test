@@ -95,7 +95,7 @@
 25) 문자열과 관련된 꿀팁 함수!!!!!!!!!!!!!!!! **1. count 함수** ex) s = s.count('0') 라고 쓰면, s 안의 0의 개수 세줌. 대신 문자(str)만 찾아야함! 정수(int) 안됨./ **2. replace 함수** ex) s = s.replace('0','')라고 쓰면, s안의 0를 없애      줌. / **3. bin 함수** ex) s = bin(len(s))[2:] 라고 쓰면, s의 길이를 다시 이진수로 바꾸어줌. 이때 [2:] 꼭 사용하기! 앞에 0b가 붙기 때문.
 26) 두 숫자의 최대공약수 구하는 함수 : from math import **gcd** => 두 수의 최소공배수 = 두 수의 곱 // 두 수의 최대공약수 ; a*b //gcd(a,b) ; gcd = greatest common divisor, lcm = lowest common multiple
 
-**def generate_combinations(arr, r)**:
+def generate_combinations(arr, r):
     result = []
     n = len(arr)
     
@@ -115,7 +115,7 @@
     backtrack(0, [])
     return result
 
-**def generate_permutations(arr, r)**:
+def generate_permutations(arr, r):
     result = []
     n = len(arr)
     used = [False] * n  # 요소가 사용되었는지를 체크하기 위한 배열
